@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		pasta
+	</title>
+	<style type="text/css">
+		body {
+  font-family: Arial, sans-serif;
+  background: url(../img/pozadinaSto.jpeg) no-repeat  center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.meniPica{
+    max-width: 18em;
+}
+.picaPop{
+    max-width: 100%;
+}
+
+h3{
+    color:black;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+
+	</style>
+</head>
+<body>
+
+	 <h1>Dostava Paste</h1>
+
+
+
+<div class="box">
+    <a class="button" href="#popup1"><img src="../img/picka.jpg" class="meniPica"> <h3> Torteline </h3></a>
+</div>
+
+
+
+<div id="popup1" class="overlay">
+    <div class="popup">
+        <h2> Torteline </h2>
+        <p>sastojci: punjene rukolom i mocarelom u sosu cetri vrste sira  </p>
+        <p>cena: 520 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+<div class="box">
+    <a class="button" href="#popup2"><img src="../img/picka.jpg" class="meniPica"> <h3> Torteline </h3></a>
+</div>
+
+
+
+<div id="popup2" class="overlay">
+    <div class="popup">
+        <h2> Torteline </h2>
+        <p>sastojci:  punjene mesom u paradajz sosu </p>
+        <p>cena: 530 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="box">
+    <a class="button" href="#popup3"><img src="../img/picka.jpg" class="meniPica"> <h3> Carbonare </h3></a>
+</div>
+
+
+
+<div id="popup3" class="overlay">
+    <div class="popup">
+        <h2> Carbonare </h2>
+        <p>sastojci:  testenina, neu. pavlaka, slanina, beli luk, parmezan, kackavalj </p>
+        <p>cena: 550 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+<div class="box">
+    <a class="button" href="#popup4"><img src="../img/picka.jpg" class="meniPica"> <h3> Bolonjez </h3></a>
+</div>
+
+
+
+<div id="popup4" class="overlay">
+    <div class="popup">
+        <h2> Bolonjez </h2>
+        <p>sastojci:  testenina, mleveno meso, paradajz sos, parmezan </p>
+        <p>cena: 540 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+<div class="box">
+    <a class="button" href="#popup5"><img src="../img2/pastamilanjez.jpg" class="meniPica"> <h3> Milanjez </h3></a>
+</div>
+
+
+
+<div id="popup5" class="overlay">
+    <div class="popup">
+        <h2> Milanjez </h2>
+        <p>sastojci: testenina, sunka, paradajz sos, parmezan  </p>
+        <p>cena: 530 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img2/pastamilanjez.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="box">
+    <a class="button" href="#popup6"><img src="../img/picka.jpg" class="meniPica"> <h3> Quatro Formagi </h3></a>
+</div>
+
+
+
+<div id="popup6" class="overlay">
+    <div class="popup">
+        <h2> Quatro Formagi </h2>
+        <p>sastojci: testenina, neutralna pavlaka, 4 vrste sira  </p>
+        <p>cena: 550 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="box">
+    <a class="button" href="#popup7"><img src="../img/picka.jpg" class="meniPica"> <h3> Polo </h3></a>
+</div>
+
+
+
+<div id="popup7" class="overlay">
+    <div class="popup">
+        <h2> Polo </h2>
+        <p>sastojci: testenina, piletina, povrce, paradajz sos  </p>
+        <p>cena: 560 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+<div class="box">
+    <a class="button" href="#popup8"><img src="../img/picka.jpg" class="meniPica"> <h3> Posna </h3></a>
+</div>
+
+
+
+<div id="popup8" class="overlay">
+    <div class="popup">
+        <h2> Posna </h2>
+        <p>sastojci: testenina, tuna, luk, paradajz sos   </p>
+        <p>cena: 540 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="box">
+    <a class="button" href="#popup9"><img src="../img/picka.jpg" class="meniPica"> <h3> Vege </h3></a>
+</div>
+
+
+
+<div id="popup9" class="overlay">
+    <div class="popup">
+        <h2> Vege </h2>
+        <p>sastojci: testenina, povrce, paradajz sos  </p>
+        <p>cena: 510 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="box">
+    <a class="button" href="#popupQ"><img src="../img/picka.jpg" class="meniPica"> <h3> Tartufi </h3></a>
+</div>
+
+
+
+<div id="popupQ" class="overlay">
+    <div class="popup">
+        <h2> Tartufi </h2>
+        <p>sastojci: testenina, neutralna pavlaka, tartufi  </p>
+        <p>cena: 810 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+<div class="box">
+    <a class="button" href="#popupW"><img src="../img/picka.jpg" class="meniPica"> <h3> Lazanje </h3></a>
+</div>
+
+
+
+<div id="popupW" class="overlay">
+    <div class="popup">
+        <h2> Lazanje </h2>
+        
+        <p>cena: 630 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

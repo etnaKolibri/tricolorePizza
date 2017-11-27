@@ -1,0 +1,559 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        pizza
+    </title>
+    <style type="text/css">
+        body {
+  font-family: Arial, sans-serif;
+  background: url(../img/pozadinaSto.jpeg) no-repeat  center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.meniPica{
+    max-width: 18em;
+}
+.picaPop{
+    max-width: 100%;
+}
+
+h3{
+    color:black;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+    </style>
+</head>
+<body>
+
+
+    <h1>Pizza</h1>
+
+
+
+<div class="box">
+    <a class="button" href="#popup1"><img src="../img/picka.jpg" class="meniPica"> <h3> Margarita </h3></a>
+</div>
+
+
+
+<div id="popup1" class="overlay">
+    <div class="popup">
+        <h2>  Margarita </h2>
+        <p>sastojci:  pelat, kackavalj  </p>
+        <p>cena: 450/700 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+<div class="box">
+    <a class="button" href="#popup2"><img src="../img2/capricoza.jpg" class="meniPica"> <h3>CAPRICCIOSA</h3></a>
+</div>
+
+<div id="popup2" class="overlay">
+    <div class="popup">
+        <h2>CAPRICCIOSA</h2>
+        <p>pelat, kackavalj, pecurke, sunka</p>
+        <p>cena: 500/780</p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img2/capricoza.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+<div class="box">
+    <a class="button" href="#popup3"><img src="../img/picka.jpg" class="meniPica">
+        <h3>Napolitana</h3></a>
+</div>
+
+<div id="popup3" class="overlay">
+    <div class="popup">
+        <h2>Napolitana</h2>
+        <p>pavlaka, slanina,  kackavalj, paprika, paradajz</p>
+        <p>cena: 520/800</p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+<div class="box">
+    <a class="button" href="#popup4"><img src="../img2/cilihot.jpg" class="meniPica"><h3>Chili Hot</h3></a>
+</div>
+
+<div id="popup4" class="overlay">
+    <div class="popup">
+        <h2>Chili hot</h2>
+        <p>pelat, kackavalj, kulen, pecurke, feferone</p>
+        <p>cena: 530/810</p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img2/cilihot.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="box">
+    <a class="button" href="#popup5"><img src="../img/picka.jpg" class="meniPica"> <h3>Polo </h3></a>
+</div>
+
+
+
+<div id="popup5" class="overlay">
+    <div class="popup">
+        <h2>  Polo </h2>
+        <p>sastojci: pelat, kackavalj, piletina, paprika, ljub.luk   </p>
+        <p>cena: 540/820 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="box">
+    <a class="button" href="#popup6"><img src="../img/picka.jpg" class="meniPica"> <h3>Tuna </h3></a>
+</div>
+
+
+
+<div id="popup6" class="overlay">
+    <div class="popup">
+        <h2> Tuna  </h2>
+        <p>sastojci: pelat, (posni) kackavalj, tunjevina, ljub.luk  </p>
+        <p>cena: 530/810 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="box">
+    <a class="button" href="#popup7"><img src="../img2/picavegeterijana.jpg" class="meniPica"> <h3>Vegeterijana</h3></a>
+</div>
+
+
+
+<div id="popup7" class="overlay">
+    <div class="popup">
+        <h2> Vegeterijana  </h2>
+        <p>sastojci: pelat, kackavalj, povrce   </p>
+        <p>cena: 540/820 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img2/picavegeterijana.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="box">
+    <a class="button" href="#popup8"><img src="../img/picka.jpg" class="meniPica"> <h3> Quatro Formagi</h3></a>
+</div>
+
+
+
+<div id="popup8" class="overlay">
+    <div class="popup">
+        <h2>  Quatro Formagi </h2>
+        <p>sastojci: pelat, 4 vrste sira   </p>
+        <p>cena: 550/830 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="box">
+    <a class="button" href="#popup9"><img src="../img/picka.jpg" class="meniPica"> <h3>Quatro Stagioni </h3></a>
+</div>
+
+
+
+<div id="popup9" class="overlay">
+    <div class="popup">
+        <h2> Quatro Stagioni  </h2>
+        <p>sastojci: pelat, kackavalj, sunka, kul, pecurke, jaja   </p>
+        <p>cena: 560/840 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="box">
+    <a class="button" href="#popupQ"><img src="../img/picka.jpg" class="meniPica"> <h3> Mocarela </h3></a>
+</div>
+
+
+
+<div id="popupQ" class="overlay">
+    <div class="popup">
+        <h2> Mocarela  </h2>
+        <p>sastojci: pelat, pelat, kackavalj, mocarela, ceri   </p>
+        <p>cena: 560/840 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="box">
+    <a class="button" href="#popupW"><img src="../img/picka.jpg" class="meniPica"> <h3> Proscuitto </h3></a>
+</div>
+
+
+
+<div id="popupW" class="overlay">
+    <div class="popup">
+        <h2> Proscuitto  </h2>
+        <p>sastojci: pelat, kackavalj, prsuta, rukola, ceri, paramezan  </p>
+        <p>cena: 560/840 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="box">
+    <a class="button" href="#popupE"><img src="../img/picka.jpg" class="meniPica"> <h3> Tartufi </h3></a>
+</div>
+
+
+
+<div id="popupE" class="overlay">
+    <div class="popup">
+        <h2> Tartufi  </h2>
+        <p>sastojci: pelat, plat, kackavalj, tartufi </p>
+        <p>cena: 810/1090 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="box">
+    <a class="button" href="#popupR"><img src="../img2/frutidimare.jpg" class="meniPica"> <h3> Fruti Di Mare</h3></a>
+</div>
+
+
+
+<div id="popupR" class="overlay">
+    <div class="popup">
+        <h2> Fruti Di Mare  </h2>
+        <p>sastojci: pelat, kackavalj, morski plodovi, rukola    </p>
+        <p>cena: 640/920  </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img2/frutidimare.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="box">
+    <a class="button" href="#popupT"><img src="../img2/nero2.jpg" class="meniPica"> <h3> Nero </h3></a>
+</div>
+
+
+
+<div id="popupT" class="overlay">
+    <div class="popup">
+        <h2>  Nero </h2>
+        <p>sastojci: spec. testo sa akt. ugljem, mocarela, spanac. govedja prsuta, ceri   </p>
+        <p>cena: 650/930 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img2/nero2.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="box">
+    <a class="button" href="#popupZ"><img src="../img2/crnapica.jpg" class="meniPica"> <h3> Crna </h3></a>
+</div>
+
+
+
+<div id="popupZ" class="overlay">
+    <div class="popup">
+        <h2> Crna  </h2>
+        <p>sastojci: spec. testo sa akt. ugljem, pelat, kackavalj, povrce   </p>
+        <p>cena: 630/910  </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img2/crnapica.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="box">
+    <a class="button" href="#popupU"><img src="../img/picka.jpg" class="meniPica"> <h3> Piroska </h3></a>
+</div>
+
+
+
+<div id="popupU" class="overlay">
+    <div class="popup">
+        <h2> Piroska  </h2>
+        <p>sastojci: pelat, kackavalj, sunka, pecurke, pavlaka  </p>
+        <p>cena: 520  </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="box">
+    <a class="button" href="#popupI"><img src="../img/picka.jpg" class="meniPica"> <h3> Calzona </h3></a>
+</div>
+
+
+
+<div id="popupI" class="overlay">
+    <div class="popup">
+        <h2> Calzona   </h2>
+        <p>sastojci: pelat, kackavalj, pecurke, sunka   </p>
+        <p>cena: 530/810 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img/picka.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+<div class="box">
+    <a class="button" href="#popupO"><img src="../img2/punjenapogaca1.jpg" class="meniPica"> <h3> Punjena pogaca sunka </h3></a>
+</div>
+
+
+
+<div id="popupO" class="overlay">
+    <div class="popup">
+        <h2>  Punjena pogaca sunka </h2>
+        <p>sastojci: pelat, kackavalj, pecurke, sunka  </p>
+        <p>cena: 510 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img2/punjenapogaca1.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="box">
+    <a class="button" href="#popupP"><img src="../img2/punjenapogaca1.jpg" class="meniPica"> <h3> Punjena pogaca slanina </h3></a>
+</div>
+
+
+
+<div id="popupP" class="overlay">
+    <div class="popup">
+        <h2> Punjena pogaca slanina  </h2>
+        <p>sastojci: kajmak, slanina  </p>
+        <p>cena: 530 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img2/punjenapogaca1.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="box">
+    <a class="button" href="#popupA"><img src="../img2/dolcepica.jpg" class="meniPica"> <h3> Dolce </h3></a>
+</div>
+
+
+
+<div id="popupA" class="overlay">
+    <div class="popup">
+        <h2> Dolce  </h2>
+        <p>sastojci: marmelada, sez. voce, prelivi   </p>
+        <p>cena: 520/800 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img2/dolcepica.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="box">
+    <a class="button" href="#popupS"><img src="../img2/picatricolore.jpg" class="meniPica"> <h3> Tricolore </h3></a>
+</div>
+
+
+
+<div id="popupS" class="overlay">
+    <div class="popup">
+        <h2> Tricolore  </h2>
+        <p>sastojci: pelat, kackavalj, sunka, slanina, pecurke, mocarela, prsuta, parmezan, rukola, ceri   </p>
+        <p>cena: 600/880 </p>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="picaPop" src="../img2/picatricolore.jpg">
+            <a href="tel:066/66-110-66">tel:066/66-110-66</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+
+  <!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>
+		Pizzeria Tricolore
+	</title>
+</head>
+<body>
+	<!-- Header Showcase -->
+<header id="showcase" class="grid">
+  <div class="bg-image"></div>
+  <div class="content-wrap">
+    <img id="logoic" src="img/sebastijan.png">
+    <h1>Dobro dosli u piceriju <span style="background-color: forestgreen; border-radius: 20% ;">Tricolore</span></h1>
+   
+    <a href="#section-b" class="btn">Meni</a>
+    <h2>Pozovi nas odmah<br>
+    <a id="brOj" href="tel:066/66 110 66">Tel: 066/66 110 66</h2></a>
+   <!-- <a href="tel:026/45 110 11"><h2>026/45 110 11</h2></a>-->
+  </div>
+</header>
+
+<!-- Main Area -->
+<main id="main">
+  <!-- Section A -->
+  <section id="section-a" class="grid">
+    <div class="content-wrap">
+      <h2 class="content-title">Najbolji prostor za proslave!</h2>
+      <div class="content-text">
+        <div class="w3-content w3-section" style="">
+  <img class="mySlides" src="img/slika.jpg" >
+  <img class="mySlides" src="img/slika3.jpg">
+  <img class="mySlides" src="img/slika2.jpg">
+</div>
+
+      </div>
+    </div>
+  </section>
+<h2 style="font-family:Palatino" >Nas meni:</h2>
+  <!-- Section B -->
+  <section id="section-b" class="grid">
+  	
+
+  <a href="#"><img src="img/pizza2.jpg" class="klopa" ></a>
+  <a href="#"><img src="img/salate1545.jpg" class="klopa" ></a>
+  <a href="#"><img src="img/meso2.jpg" class="klopa" ></a>
+  <a href="#"><img src="img/pasta2.jpg" class="klopa" ></a>
+
+    
+  </section>
+
+  <!-- Section C -->
+  <section id="section-c" class="grid">
+    <div class="content-wrap">
+      <h2 class="content-title" style="font-family: serif;">Nasa kuca</h2>
+      <p>Verujemo da dobri ljudi prave dobra jela, da dobra jela prave dobru atmosferu, da dobra atmosfera pravi dobre ljude, dobri ljudi, dobra jela i tako u krug... Strast i entuzijazam su kvaliteti koje nagradjujemo. Zato smo sigurni da je Picerija Tricolore Vas pravi izbor..<br>U nasoj piceriji najvazniji su kvalitet i brza dostava. Vruce pice iz peci na drva koje stizu dobijate pravo na Vasu kucnu adresu. Kada jednom probate neke od nasih specijaliteta uveravamo Vas da cemo zasnovati dugorocni odnos na obostrano zadovoljstvo.<br>
+</p>
+    </div>
+  </section>
+
+  <!-- Section D -->
+  <section id="section-d" class="grid">
+    <div class="box">
+      <h2 class="content-title">Radno vreme</h2>
+      <p>od ponedeljaka do subote: 09h-00h <br>
+          nedeljom od 11:00h-00h<br><br>
+          Kontakt telefon za porudzbine i rezervacije :
+<a href="tel:026-46-110-11" id="brOj">026- 46 - 110 - 11</a> ili <a href="tel:066-66-110-66" id="brOj">066-66-110-66</a></p>
+      
+    </div>
+    <div class="box">
+      <h2 class="content-title">Nasa lokacija</h2>
+      <p style="font-size: 2.2em">Djure Danicica 27</p>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer id="main-footer" class="grid">
+  
+   <a href="https://sr-rs.facebook.com/PicerijaTricolore/" <img src="img/fb.png" style="width: 4em"></a>
+  
+</footer>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3500);
+}
+</script>
+</body>
+</html>
